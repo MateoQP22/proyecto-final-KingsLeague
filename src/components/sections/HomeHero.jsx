@@ -2,22 +2,6 @@ import useHome from "../../hooks/useHome";
 
 const HomeHero = () => {
   const { homeData } = useHome();
-  const [search, setSearch] = useState("");
-
-  const searcher = (e) => {
-    setSearch(e.target.value)
-    console.log(e.target)
-  }
-  // método de filtrado -1
-  let results = []
-  if (!search) {
-    results = users
-  } else {
-    results = users.filter((dato) => (
-      dato.title.toLowerCase().includes(search.toLocaleLowerCase())
-    ))
-  }
-
 
   return (
     <>
@@ -26,8 +10,6 @@ const HomeHero = () => {
 
         return (
           <>
-            <input value={search} onChange={searcher} type="text" placeholder='Search' />
-
             <li key={element.id}>
               <h1>{id} </h1>
               <h2>{title}</h2>
