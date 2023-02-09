@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import PrimaryLayout from "../layouts/PrimaryLayout";
 import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/LoginPage";
+import NosotrosPage from "../pages/NosotrosPage";
 import RegisterPage from "../pages/RegisterPage";
 import AutoValidation from "./AutoValidation";
 
@@ -17,6 +18,10 @@ export const primaryRoutes = createBrowserRouter([
                     {
                         index:true,
                         element: <HomePage/>
+                    },
+                    {
+                        path: 'nosotros',
+                        element: <NosotrosPage/>
                     }
                 ]
             },

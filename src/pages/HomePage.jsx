@@ -16,6 +16,7 @@ const HomePage = () => {
   
 
   return (
+
     <>
     <HomeHero homedata={homedata} />
     <SearchComponent />
