@@ -1,0 +1,23 @@
+.f-elements {
+  display: flex;
+
+  &--center {
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  &--responsive {
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &--header {
+    align-items: center;
+    justify-content: space-between;
+  }
+}

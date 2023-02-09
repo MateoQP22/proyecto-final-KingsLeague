@@ -1,0 +1,11 @@
+.select {
+  background-color: var(--primary-theme-color);
+
+  &--theme {
+    appearance: none;
+    text-align: center;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+  }
+}
